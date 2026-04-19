@@ -7,6 +7,8 @@ ruby '3.2.2'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.10'
 # Security pins (Dependabot transitive)
 gem 'rack', '~> 2.2', '>= 2.2.23'
+# Rails 6.1 + Ruby 3.2 + concurrent-ruby 1.3.5 互換性回避
+gem 'concurrent-ruby', '1.3.4'
 gem 'addressable', '~> 2.8', '>= 2.8.8'
 gem 'nokogiri', '~> 1.15', '>= 1.15.7'
 # Use mysql as the database for Active Record
@@ -57,5 +59,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'slim-rails'
-gem 'html2slim'
 gem 'bootstrap'

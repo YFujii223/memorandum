@@ -82,7 +82,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
-    concurrent-ruby (1.3.6)
+    concurrent-ruby (1.3.4)
     crass (1.0.6)
     date (3.5.1)
     drb (2.2.3)
@@ -100,9 +100,6 @@ GEM
     ffi (1.17.4-x86_64-linux-musl)
     globalid (1.3.0)
       activesupport (>= 6.1)
-    hpricot (0.8.6)
-    html2slim (0.2.0)
-      hpricot
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
@@ -295,7 +292,7 @@ DEPENDENCIES
   bootstrap
   byebug
   capybara (>= 3.35)
-  html2slim
+  concurrent-ruby (= 1.3.4)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2 (>= 0.5.3)
